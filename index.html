@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain vs Reflex Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧠 Brain vs Reflex</h1>
+      <button id="themeToggle">🌗 Toggle Theme</button>
+      <button id="startBtn">Start Reaction Test</button>
+
+      <div id="reactionSection" class="hidden">
+        <p id="instruction">Wait for green...</p>
+        <div id="reactionBox"></div>
+      </div>
+
+      <div id="quizSection" class="hidden">
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Your answer..." />
+        <button id="submitAnswer">Submit</button>
+        <p id="timer"></p>
+      </div>
+
+      <div id="resultSection" class="hidden">
+        <h2>Your Brain Reflex Score:</h2>
+        <p id="result"></p>
+        <p id="stats"></p>
+        <button onclick="location.reload()">Play Again</button>
+      </div>
+
+      <div id="quoteSection">
+        <h3>💡 Motivation of the Day</h3>
+        <p id="quote"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
